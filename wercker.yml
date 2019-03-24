@@ -104,8 +104,6 @@ build:
 
           go test -v $(glide novendor)
 
-
-
     - script:
 
         name: copy files to wercker output
@@ -128,7 +126,7 @@ deploy:
 
        password: $DOCKER_PASSWORD
 
-       cmd: go run /pipeline/source/main.go
+       cmd: /pipeline/source/go-pipeline
 
        port: "8080"
 
