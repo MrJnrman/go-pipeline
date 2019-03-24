@@ -1,2 +1,6 @@
 package: github.com/MrJnrman/pipeline
-import: []
+import:
+- package: github.com/olekukonko/tablewriter
+  version: ^0.0.1
+- package: github.com/mattn/go-runewidth
+  version: ^0.0.4
