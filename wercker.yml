@@ -128,7 +128,7 @@ deploy:
 
        password: $DOCKER_PASSWORD
 
-       cmd: /pipeline/source/main
+       cmd: go run /pipeline/source/main.go
 
        port: "8080"
 
