@@ -8,7 +8,7 @@ dev:
 
     - setup-go-workspace:
 
-        package-dir: github.com/cloudnativego/hello
+        package-dir: github.com/MrJnrman/go-pipeline
 
 
 
@@ -52,7 +52,7 @@ build:
 
     - setup-go-workspace:
 
-        package-dir: github.com/cloudnativego/hello
+        package-dir: github.com/MrJnrman/go-pipeline
 
 
 
@@ -128,30 +128,30 @@ deploy:
 
        password: $DOCKER_PASSWORD
 
-       cmd: /pipeline/source/hello
+       cmd: /pipeline/main
 
        port: "8080"
 
        tag: latest
 
-       repository: cloudnativego/book-hello
+       repository: jnrman/go-pipeline
 
        registry: https://registry.hub.docker.com
 
 
 
-   - cng/cf-deploy:
+  #  - cng/cf-deploy:
 
-       api: $API
+  #      api: $API
 
-       user: $USER
+  #      user: $USER
 
-       password: $PASSWORD
+  #      password: $PASSWORD
 
-       org: $ORG
+  #      org: $ORG
 
-       space: $SPACE
+  #      space: $SPACE
 
-       appname: wercker-step-hello
+  #      appname: wercker-step-hello
 
-       docker_image: cloudnativego/book-hello
+  #      docker_image: jnrman/go-pipeline
