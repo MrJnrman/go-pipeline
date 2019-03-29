@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"os"
 
 	"github.com/olekukonko/tablewriter"
@@ -26,5 +27,7 @@ func main() {
 	table.AppendBulk(data)
 
 	table.Render()
+
+	fmt.Println(`Testing purposes`)
 
 }
