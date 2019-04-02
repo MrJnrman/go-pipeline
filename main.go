@@ -28,6 +28,6 @@ func main() {
 
 	table.Render()
 
-	fmt.Println(`Testing purposes`)
+	fmt.Println(`Demo #2`)
 
 }
